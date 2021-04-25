@@ -3,7 +3,8 @@ import 'package:login_minimalist/widget/buttonNewUser.dart';
 import 'package:login_minimalist/widget/newEmail.dart';
 import 'package:login_minimalist/widget/newName.dart';
 import 'package:login_minimalist/widget/password.dart';
-import 'package:login_minimalist/widget/singup.dart';
+import '../widget/rotated_title_text.dart';
+
 import 'package:login_minimalist/widget/textNew.dart';
 import 'package:login_minimalist/widget/userOld.dart';
 
@@ -29,7 +30,7 @@ class _NewUserState extends State<NewUser> {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    SingUp(),
+                    RotatedTitleText(title: 'Sign Up'),
                     TextNew(),
                   ],
                 ),

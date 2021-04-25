@@ -4,8 +4,9 @@ import 'package:login_minimalist/widget/first.dart';
 import 'package:login_minimalist/widget/forgot.dart';
 import 'package:login_minimalist/widget/inputEmail.dart';
 import 'package:login_minimalist/widget/password.dart';
+import 'package:login_minimalist/widget/rotated_title_text.dart';
 import 'package:login_minimalist/widget/textLogin.dart';
-import 'package:login_minimalist/widget/verticalText.dart';
+import '../widget/rotated_title_text.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -28,8 +29,10 @@ class _LoginPageState extends State<LoginPage> {
             Column(
               children: <Widget>[
                 Row(children: <Widget>[
-                  VerticalText(),
-                  TextLogin(),
+                  const RotatedTitleText(
+                    title: 'Sign In',
+                  ),
+                  const TextLogin(),
                 ]),
                 InputEmail(),
                 PasswordInput(),
@@ -43,5 +46,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-
